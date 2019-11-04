@@ -38,4 +38,4 @@ See [LICENSE.md](LICENSE.md) for details.
 
 - Nick Haralampopoulos
 
-- Daniel Addo
+- Daniel Larbi Addo
