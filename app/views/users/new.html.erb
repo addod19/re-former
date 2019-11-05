@@ -1,28 +1,7 @@
-<h1>New Form</h1>
+<div class="container">
 
+  <h1>New Form</h1>
 
-<%= form_for @user do |f| %>
-  <%= f.label :username, "User Name" %>
-  <%= f.text_field :username, placeholder: "Your name here" %>
-<br>
-  <%= f.label :email, "Insert your email"%>
-  <%= f.email_field :email, placeholder: "email@email.com" %>
-<br>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-<br>
-<%= f.submit %>
+  <%= render 'layouts/form'%>
 
-<% if @user.errors.any? %>
-  <div id="error_explanation">
-    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
- 
-    <ul>
-    <% @user.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-  </div>
-<% end %>
-
-<% end %>
+</div>

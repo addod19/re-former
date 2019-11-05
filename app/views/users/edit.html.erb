@@ -1,13 +1,5 @@
-<h1>Edit user</p>
-<%= form_for @user do |f| %>
-  <%= f.label :username, "User Name" %>
-  <%= f.text_field :username, placeholder: "Your name here" %>
-<br>
-  <%= f.label :email, "Insert your email"%>
-  <%= f.email_field :email, placeholder: "email@email.com" %>
-<br>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-<br>
-<%= f.submit %>
-<% end %>
+<div class="container">
+  <h1>Edit user</p>
+  
+  <% <%= render 'layouts/form'%> %>
+</div>
